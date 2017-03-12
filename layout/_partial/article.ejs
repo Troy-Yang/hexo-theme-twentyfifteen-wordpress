@@ -1,0 +1,29 @@
+<article class="hentry">
+		<%- partial('post/gallery') %>
+		<% if (post.link || post.title){ %>
+			<header class="entry-header">
+				<h2 class="entry-title"><a href="<%- url_for(post.path) %>" rel="bookmark"><%- post.title %></a></h2>	
+			</header>
+		<% } %>
+		<!-- .entry-header -->
+		<div class="entry-content">
+			<% if (post.excerpt && index){ %>
+				<%- post.excerpt %>
+				<% if (theme.excerpt_link){ %>
+				<p class="article-more-link">
+					<a href="<%- url_for(post.path) %>#more"><%= theme.excerpt_link %></a>
+				</p>
+				<% } %>
+			<% } else { %>
+				<%- post.content %>
+			<% } %>
+		</div><!-- .entry-content -->
+		<% if (!index){ %>
+			<div class="entry-comments">
+				<%- partial('comments/duoshuo', {post: post}) %>
+			</div>
+		<% } %>
+		<footer class="entry-footer">
+			<%- partial('article-footer', {post: post}) %>
+		</footer><!-- .entry-footer -->
+</article>

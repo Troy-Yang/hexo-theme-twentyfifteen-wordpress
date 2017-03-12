@@ -1,0 +1,17 @@
+# Header
+site_title: Troy's Blog
+site_description: My name is Troy Yang and this is my tech blog.
+menu:
+  Home: /
+  Archives: /archives
+  AboutMe: /aboutme
+# display widgets
+widgets:
+- archives
+- recent_posts
+- tagcloud
+# widget behavior
+archive_type: 'monthly'
+show_count: false
+# Content
+excerpt_link: Read More
