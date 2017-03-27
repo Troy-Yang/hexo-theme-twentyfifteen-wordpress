@@ -3,7 +3,6 @@
 				<time class="updated" datetime="<%= post.date.toDate().toISOString() %>"><%= post.date.format(config.date_format) %></time>
 				</a>
 			</span>
-			<span class="byline font-asesome-icon"><a href="">Theme Buster</a></span>
 			<% if(post.categories.length) { %>
 				<span class="cat-links font-asesome-icon">
 					<% post.categories.each(function(cat){ %>

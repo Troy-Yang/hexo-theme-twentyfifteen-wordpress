@@ -207,8 +207,12 @@ body {
 
 .hentry {
     background-color: #fff;
-    /*padding-top: 7.6923%;*/
+    padding-top: 7.6923%;
     position: relative;
+}
+
+.hentry.has-post-thumbnail{
+	padding-top:0;
 }
 
 .hentry + .hentry {
@@ -350,18 +354,31 @@ body {
     border: 1px solid rgba(51, 51, 51, 0.1);
 }
 
+/**
+* Pagination
+*/
 .page-links{
-	text-align:center;
+    margin: 0 7.6923%;
+    margin-top: 3%;
+    text-align: center;
+}
+.page-links a, .page-links > span {
+    border: 1px solid #eaeaea;
+    border: 1px solid rgba(51, 51, 51, 0.1);
+    display: inline-block;
+    font-size: 12px;
+    font-size: 1.2rem;
+    height: 2em;
+    line-height: 2;
+    margin: 0 0.3333em 0.3333em 0;
+    width: 4em;
 }
 
-.page-links > span {
-    border: 0;
-    color: #707070;
-    color: rgba(51, 51, 51, 0.7);
-    height: auto;
-    margin: 0;
-    padding-right: 0.5em;
-    width: auto;
+.page-links a {
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0.3);
+    background-color: #333;
+    border-color: #333;
+    color: #fff;
 }
 
 /**
