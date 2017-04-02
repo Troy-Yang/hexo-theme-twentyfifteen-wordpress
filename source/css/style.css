@@ -1,3 +1,6 @@
+/*
+* Global Setting
+*/
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
 	border: 0;
 	margin: 0;
@@ -61,10 +64,85 @@ html {
 body {
 	background: #f1f1f1;
     color: #333;
-    /* font-family: "Noto Serif", serif; */
     font-size: 15px;
     font-size: 1.5rem;
-    line-height: 1.6;
+	font-family: Georgia, serif;
+    letter-spacing: -0.01em;
+    word-spacing: 0.2em;
+    line-height: 1.8em;
+}
+
+body {
+		font-size: 15px;
+		font-size: 1.5rem;
+		line-height: 1.6;
+	}
+
+p,
+address,
+pre,
+hr,
+ul,
+ol,
+dl,
+dd,
+table {
+	margin-bottom: 1.6em;
+}
+
+blockquote {
+	font-size: 18px;
+	font-size: 1.8rem;
+	line-height: 1.6667;
+	margin-bottom: 1.6667em;
+	margin-left: -1.3333em;
+	padding-left: 1.1111em;
+}
+
+blockquote cite,
+blockquote small {
+	font-size: 15px;
+	font-size: 1.5rem;
+	line-height: 1.6;
+}
+
+pre {
+	line-height: 1.2;
+}
+
+button,
+input,
+select,
+textarea {
+	font-size: 16px;
+	font-size: 1.6rem;
+	line-height: 1.5;
+}
+
+button,
+input {
+	line-height: normal;
+}
+
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"],
+.post-password-form input[type="submit"],
+.widecolumn #submit,
+.widecolumn .mu_register input[type="submit"] {
+	font-size: 12px;
+	font-size: 1.2rem;
+	padding: 0.7917em 1.5833em;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+textarea {
+	padding: 0.375em;
 }
 /*
 * Font awesome css
@@ -445,7 +523,7 @@ body {
 /**
  * 16.1 Mobile Large 620px
  */
- @media screen and (min-width: 38.75em) {
+ @media screen and (min-width: 38.75rem) {
 	 .secondary {
     box-shadow: 0 0 1px rgba(0, 0, 0, 0.15);
     margin: 7.6923% 7.6923% 0;
@@ -468,7 +546,7 @@ body {
  * 16.2 Tablet Small 740px
  */
 
-@media screen and (min-width: 46.25em){
+@media screen and (min-width: 46.25rem){
 body, button, input, select, textarea {
     font-size: 17px; 
     font-size: 1.7rem; 
@@ -479,7 +557,7 @@ body, button, input, select, textarea {
 /**
  * 16.3 Tablet Large 880px
  */
- @media screen and (min-width: 55em){
+ @media screen and (min-width: 55rem){
 body, button, input, select, textarea {
     font-size: 19px; 
     font-size: 1.9rem;
@@ -490,7 +568,7 @@ body, button, input, select, textarea {
  * 16.4 Desktop Small 955px
  */
  
-@media screen and (min-width: 59.6875em){
+@media screen and (min-width: 59.6875rem){
 body {
     font-size: 15px;
     font-size: 1.5rem;
@@ -632,7 +710,7 @@ body:before {
  * 16.5 Desktop Medium 1100px
  */
  
-@media screen and (min-width: 68.75em){
+@media screen and (min-width: 68.75rem){
 body, button, input, select, textarea {
     font-size: 17px;
     font-size: 1.7rem;
@@ -643,7 +721,7 @@ body, button, input, select, textarea {
 /**
  * 16.6 Desktop Large 1240px
  */
-@media screen and (min-width: 77.5em){
+@media screen and (min-width: 77.5rem){
 body, button, input, select, textarea {
     font-size: 19px;
     font-size: 1.9rem;
@@ -667,7 +745,7 @@ body, button, input, select, textarea {
  * 16.7 Desktop X-Large 1403px
  */
 
-@media screen and (min-width: 87.6875em) {
+@media screen and (min-width: 87.6875rem) {
 	body:before {
 		width: -webkit-calc(50% - 289px);
 		/* width: calc(50% - 289px); */
