@@ -21,7 +21,7 @@
 				<%- post.content %>
 			<% } %>
 		</div><!-- .entry-content -->
-		<% if (!index){ %>
+		<% if (!index && post.comments){ %>
 			<div class="entry-comments">
 				<%- partial('comments/duoshuo', {post: post}) %>
 			</div>

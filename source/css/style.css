@@ -596,6 +596,9 @@ a:focus {
 .entry-content, .entry-summary {
     padding: 0 10% 10%;
 }
+.entry-content, .article-more-link{
+    margin-top: 2em;
+}
 .entry-content h2:before,.entry-content h3:before,.entry-content h4:before,.entry-content h6:before {
     margin-right: 1em;
     content: '#';
