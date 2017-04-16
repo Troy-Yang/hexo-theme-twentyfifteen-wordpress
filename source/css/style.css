@@ -288,6 +288,10 @@ textarea {
     padding-top: 7.6923%;
     position: relative;
 }
+.hentry p{
+    line-height: 2.8rem;
+    margin-top: 2.2rem;
+}
 
 .hentry.has-post-thumbnail{
 	padding-top:0;
@@ -666,7 +670,7 @@ body:before {
 /*page*/
 .hentry {
     box-shadow: 0 0 1px rgba(0, 0, 0, 0.15);
-    margin: 0 7.6923%;
+    margin: 0 8.3333%;
 }
 
 .entry-content a{
