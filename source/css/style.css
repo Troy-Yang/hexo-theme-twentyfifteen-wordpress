@@ -1,54 +1,23 @@
 /*
 * Global Setting
 */
+/**
+ * 1.0 - Reset
+ *
+ * Resetting and rebuilding styles have been helped along thanks to the fine
+ * work of Eric Meyer, Nicolas Gallagher, Jonathan Neal, and Blueprint.
+ */
+
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
 	border: 0;
+	font-family: inherit;
+	/*font-size: 100%;*/
+	font-style: inherit;
+	font-weight: inherit;
 	margin: 0;
 	outline: 0;
 	padding: 0;
-}
-
-ul {
-    list-style: none;
-    margin: 0;
-	padding: 0;
-}
-
-a {
-    color: #333;
-    text-decoration: none;
-}
-
-a:hover, a:focus {
-    color: #707070;
-    color: rgba(51, 51, 51, 0.7);
-}
-
-h1, h2, h3, h4, h5, h6 {
-    clear: both;
-    font-weight: 700;
-}
-
-button, input[type="button"], input[type="reset"], input[type="submit"] {
-    -webkit-appearance: button;
-    background-color: #333;
-    border: 0;
-    color: #fff;
-    cursor: pointer;
-    font-family: "Noto Sans", sans-serif;
-    font-size: 12px;
-    font-size: 1.2rem;
-    font-weight: 700;
-    padding: 0.7917em 1.5em;
-    text-transform: uppercase;
-}
-
-img {
-    -ms-interpolation-mode: bicubic;
-    border: 0;
-    height: auto;
-    max-width: 100%;
-    vertical-align: middle;
+	vertical-align: baseline;
 }
 
 html {
@@ -61,89 +30,382 @@ html {
 	-ms-text-size-adjust: 100%;
 }
 
+*,
+*:before,
+*:after {
+	-webkit-box-sizing: inherit;
+	-moz-box-sizing: inherit;
+	box-sizing: inherit;
+}
+
 body {
 	background: #f1f1f1;
-    color: #333;
-    font-size: 15px;
-    font-size: 1.5rem;
-	font-family: Georgia, serif;
-    letter-spacing: -0.01em;
-    word-spacing: 0.2em;
-    line-height: 1.8em;
 }
 
-body {
-		font-size: 15px;
-		font-size: 1.5rem;
-		line-height: 1.6;
-	}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+nav,
+section {
+	display: block;
+}
 
-p,
-address,
-pre,
-hr,
-ul,
 ol,
-dl,
-dd,
+ul {
+	list-style: none;
+}
+
 table {
-	margin-bottom: 1.6em;
+	border-collapse: separate;
+	border-spacing: 0;
 }
 
-blockquote {
-	font-size: 18px;
-	font-size: 1.8rem;
-	line-height: 1.6667;
-	margin-bottom: 1.6667em;
-	margin-left: -1.3333em;
-	padding-left: 1.1111em;
+caption,
+th,
+td {
+	font-weight: normal;
+	text-align: left;
 }
 
-blockquote cite,
-blockquote small {
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: "";
+}
+
+blockquote,
+q {
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+	quotes: none;
+}
+
+a:focus {
+	outline: 2px solid #c1c1c1;
+	outline: 2px solid rgba(51, 51, 51, 0.3);
+}
+
+a:hover,
+a:active {
+	outline: 0;
+}
+
+a img {
+	border: 0;
+}
+
+
+/**
+ * 2.0 - Genericons
+ */
+
+
+/**
+ * 3.0 Typography
+ */
+
+body,
+button,
+input,
+select,
+textarea {
+	color: #333;
+	font-family: Arial,sans-serif;
 	font-size: 15px;
 	font-size: 1.5rem;
 	line-height: 1.6;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	clear: both;
+	font-weight: 700;
+}
+
+p {
+	margin-bottom: 1.6em;
+}
+
+b,
+strong {
+	font-weight: 700;
+}
+
+dfn,
+cite,
+em,
+i {
+	font-style: italic;
+}
+
+blockquote {
+	border-left: 4px solid #707070;
+	border-left: 4px solid rgba(51, 51, 51, 0.7);
+	color: #707070;
+	color: rgba(51, 51, 51, 0.7);
+	font-size: 18px;
+	font-size: 1.8rem;
+	font-style: italic;
+	line-height: 1.6667;
+	margin-bottom: 1.6667em;
+	padding-left: 0.7778em;
+}
+
+blockquote p {
+	margin-bottom: 1.6667em;
+}
+
+blockquote > p:last-child {
+	margin-bottom: 0;
+}
+
+blockquote cite,
+blockquote small {
+	color: #333;
+	font-size: 15px;
+	font-size: 1.5rem;
+	font-family: "Noto Sans", sans-serif;
+	line-height: 1.6;
+}
+
+blockquote em,
+blockquote i,
+blockquote cite {
+	font-style: normal;
+}
+
+blockquote strong,
+blockquote b {
+	font-weight: 400;
+}
+
+address {
+	font-style: italic;
+	margin: 0 0 1.6em;
+}
+
+code,
+kbd,
+tt,
+var,
+samp,
 pre {
+	font-family: Inconsolata, monospace;
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+}
+
+pre {
+	background-color: transparent;
+	background-color: rgba(0, 0, 0, 0.01);
+	border: 1px solid #eaeaea;
+	border: 1px solid rgba(51, 51, 51, 0.1);
 	line-height: 1.2;
+	margin-bottom: 1.6em;
+	max-width: 100%;
+	overflow: auto;
+	padding: 0.8em;
+	white-space: pre;
+	white-space: pre-wrap;
+	word-wrap: break-word;
 }
 
-button,
-input,
-select,
-textarea {
-	font-size: 16px;
-	font-size: 1.6rem;
-	line-height: 1.5;
+abbr[title] {
+	border-bottom: 1px dotted #eaeaea;
+	border-bottom: 1px dotted rgba(51, 51, 51, 0.1);
+	cursor: help;
 }
 
-button,
-input {
-	line-height: normal;
+mark,
+ins {
+	background-color: #fff9c0;
+	text-decoration: none;
 }
 
-button,
-input[type="button"],
-input[type="reset"],
-input[type="submit"],
-.post-password-form input[type="submit"],
-.widecolumn #submit,
-.widecolumn .mu_register input[type="submit"] {
-	font-size: 12px;
-	font-size: 1.2rem;
-	padding: 0.7917em 1.5833em;
+sup,
+sub {
+	font-size: 75%;
+	height: 0;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
 }
 
-input[type="text"],
-input[type="email"],
-input[type="url"],
-input[type="password"],
-input[type="search"],
-textarea {
-	padding: 0.375em;
+sup {
+	bottom: 1ex;
 }
+
+sub {
+	top: .5ex;
+}
+
+small {
+	font-size: 75%;
+}
+
+big {
+	font-size: 125%;
+}
+
+
+/**
+ * 4.0 Elements
+ */
+
+hr {
+	background-color: #eaeaea;
+	background-color: rgba(51, 51, 51, 0.1);
+	border: 0;
+	height: 1px;
+	margin-bottom: 1.6em;
+}
+
+ul,
+ol {
+	margin: 0 0 1.6em 1.3333em;
+}
+
+ul {
+	list-style: disc;
+}
+
+ol {
+	list-style: decimal;
+}
+
+li > ul,
+li > ol {
+	margin-bottom: 0;
+}
+
+dl {
+	margin-bottom: 1.6em;
+}
+
+dt {
+	font-weight: bold;
+}
+
+dd {
+	margin-bottom: 1.6em;
+}
+
+table,
+th,
+td {
+	border: 1px solid #eaeaea;
+	border: 1px solid rgba(51, 51, 51, 0.1);
+}
+
+table {
+	border-collapse: separate;
+	border-spacing: 0;
+	border-width: 1px 0 0 1px;
+	margin: 0 0 1.6em;
+	table-layout: fixed; /* Prevents HTML tables from becoming too wide */
+	width: 100%;
+}
+
+caption,
+th,
+td {
+	font-weight: normal;
+	text-align: left;
+}
+
+th {
+	border-width: 0 1px 1px 0;
+	font-weight: 700;
+}
+
+td {
+	border-width: 0 1px 1px 0;
+}
+
+th, td {
+	padding: 0.4em;
+}
+
+img {
+	-ms-interpolation-mode: bicubic;
+	border: 0;
+	height: auto;
+	max-width: 100%;
+	vertical-align: middle;
+}
+
+figure {
+	margin: 0;
+}
+
+del {
+	opacity: 0.8;
+}
+
+/* Placeholder text color -- selectors need to be separate to work. */
+
+::-webkit-input-placeholder {
+	color: rgba(51, 51, 51, 0.7);
+	font-family: "Noto Sans", sans-serif;
+}
+
+:-moz-placeholder {
+	color: rgba(51, 51, 51, 0.7);
+	font-family: "Noto Sans", sans-serif;
+}
+
+::-moz-placeholder {
+	color: rgba(51, 51, 51, 0.7);
+	font-family: "Noto Sans", sans-serif;
+	opacity: 1; /* Since FF19 lowers the opacity of the placeholder by default */
+}
+
+:-ms-input-placeholder {
+	color: rgba(51, 51, 51, 0.7);
+	font-family: "Noto Sans", sans-serif;
+}
+
+
+/**
+ * 5.0 Forms
+ */
+
+
+/**
+ * 6.0 Navigations
+ */
+
+
+/**
+ * 6.1 Links
+ */
+
+a {
+	color: #333;
+	text-decoration: none;
+}
+
+a:hover,
+a:focus {
+	color: #707070;
+	color: rgba(51, 51, 51, 0.7);
+}
+
+
 /*
 * Font awesome css
 */
@@ -274,6 +536,11 @@ textarea {
 	display:none;
 }
 
+.widget ul{
+    list-style: none;
+    margin: 0;
+}
+
 .widget-title {
     color: #333;
     margin: 0 0 1.6em;
@@ -287,10 +554,6 @@ textarea {
     background-color: #fff;
     padding-top: 7.6923%;
     position: relative;
-}
-.hentry p{
-    line-height: 2.8rem;
-    margin-top: 2.2rem;
 }
 
 .hentry.has-post-thumbnail{
@@ -332,6 +595,11 @@ textarea {
 
 .entry-content, .entry-summary {
     padding: 0 10% 10%;
+}
+.entry-content h2:before,.entry-content h3:before,.entry-content h4:before,.entry-content h6:before {
+    margin-right: 1em;
+    content: '#';
+    color: #f72d84;
 }
 
 .entry-comments{
