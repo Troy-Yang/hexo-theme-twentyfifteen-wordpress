@@ -4,7 +4,7 @@ site_description: Focus on Web Development and live in ChengDu. Happy Coding, Ha
 menu:
   Home: /
   Archives: /archives
-  AboutMe: /aboutme
+  AboutMe: /about
 # display widgets
 widgets:
 - archives

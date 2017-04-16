@@ -1,5 +1,5 @@
 <%
-	var hasPhotosClass = post.photos.length > 0?"has-post-thumbnail":"";
+	var hasPhotosClass = post.photos && post.photos.length > 0?"has-post-thumbnail":"";
 %>
 <article class="hentry <%- hasPhotosClass%>">
 		<%- partial('post/gallery') %>
