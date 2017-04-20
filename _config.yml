@@ -15,3 +15,13 @@ archive_type: 'monthly'
 show_count: false
 # Content
 excerpt_link: Read More
+# Disqus
+disqus:
+  enable: true
+  shortname:
+  count: true
+# changyan
+changyan:
+  enable: false
+  appid:
+  appkey:

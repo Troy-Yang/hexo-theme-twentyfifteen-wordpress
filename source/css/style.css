@@ -750,6 +750,15 @@ a:focus {
     font-size: 1.2rem;
     line-height: 1.5;
 }
+.site-info span:first-child {
+	display:inline-block;
+	float: left;
+}
+
+.site-info span:last-child {
+	display:inline-block;
+	float: right;
+}
 
 #infinite-footer {
     display: none;

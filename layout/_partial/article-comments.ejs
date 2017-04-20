@@ -1,0 +1,6 @@
+ <% if(theme.disqus.enable) { %>
+      <%- partial('/comments/disqus', {shortname: config.disqus_shortname}) %>
+  <% } %>
+  <% if(theme.changyan.enable) { %>
+      <%- partial('/comments/changyan') %>
+ <% } %>
