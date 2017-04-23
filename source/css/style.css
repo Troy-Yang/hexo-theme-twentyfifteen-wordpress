@@ -543,7 +543,7 @@ a:focus {
 
 .widget-title {
     color: #333;
-    margin: 0 0 1.6em;
+    margin: 0 0 1em;
     letter-spacing: 0.04em;
     text-transform: uppercase;
 }
@@ -552,6 +552,23 @@ a:focus {
     padding-left: 5px;
     color: #aaa;
     font-size: 0.85em;
+}
+
+.misc {
+    position: fixed;
+    right: 0;
+    bottom: 40px;
+    z-index: 999;
+    width: 36px;
+    /*background-color: #4aa6fc;
+    -webkit-box-shadow: 0 1px 5px rgba(0,0,0,.2);
+    box-shadow: 0 1px 5px rgba(0,0,0,.2);
+    border-radius: 2px;*/
+}
+
+.misc .top:before{
+    content: '\f0aa';
+    font-size: 2em;
 }
 
 /* content */
