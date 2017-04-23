@@ -2,7 +2,7 @@
 	var hasPhotosClass = post.photos && post.photos.length > 0?"has-post-thumbnail":"";
 %>
 <article class="hentry <%- hasPhotosClass%>">
-		<%- partial('post/gallery') %>
+		<%- partial('components/gallery') %>
 		<% if (post.link || post.title){ %>
 			<header class="entry-header">
 				<h2 class="entry-title"><a href="<%- url_for(post.path) %>" rel="bookmark"><%- post.title %></a></h2>	

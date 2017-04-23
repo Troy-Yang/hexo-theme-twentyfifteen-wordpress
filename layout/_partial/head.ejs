@@ -1,7 +1,11 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-	<link href=images/favicon.ico rel=icon>
+	<% if (theme.favicon){ %>
+    	<link rel="icon" href="<%- theme.favicon %>">
+  	<% } else { %>
+		<link href="<%- config.root %>favicon.ico" rel="icon">
+	<% } %> 
     <title>personal blog theme from wordpress 2015 default theme</title>
 	<%- css('css/font-awesome/css/font-awesome.css') %>
 	<%- css('css/style.css') %>

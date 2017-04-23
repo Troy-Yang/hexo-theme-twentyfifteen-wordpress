@@ -5,6 +5,8 @@ menu:
   Home: /
   Archives: /archives
   AboutMe: /about
+# Miscellaneous
+favicon:
 # display widgets
 widgets:
 - archives
@@ -12,16 +14,20 @@ widgets:
 - tagcloud
 # widget behavior
 archive_type: 'monthly'
-show_count: false
+show_count: true
 # Content
 excerpt_link: Read More
 # Disqus
 disqus:
-  enable: true
-  shortname:
+  enable: false
+  shortname: troyyang-com
   count: true
 # changyan
 changyan:
   enable: false
   appid:
   appkey:
+# duoshuo
+duoshuo:
+  enable: true
+  shortname: troyyang

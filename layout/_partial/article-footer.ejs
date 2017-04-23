@@ -1,19 +1,7 @@
-<span class="posted-on font-asesome-icon">
-				<a href="" rel="bookmark">
-				<time class="updated" datetime="<%= post.date.toDate().toISOString() %>"><%= post.date.format(config.date_format) %></time>
-				</a>
-			</span>
-			<% if(post.categories && post.categories.length) { %>
-				<span class="cat-links font-asesome-icon">
-					<% post.categories.each(function(cat){ %>
-							<a href="<%- url_for(cat.path) %>" rel="category tag"><%= cat.name %></a>
-					<% }); %>
-				</span>
-			<% } %>
-			<% if(post.tags && post.tags.length) { %>
-				<span class="tags-links font-asesome-icon">
-				<% post.tags.each(function(tag){ %>
-							<a href="<%- url_for(tag.path) %>" rel="category tag"><%= tag.name %></a>
-					<% }); %>
-				</span>
-			<% } %>		
+<%- partial('components/date') %>
+<% if(post.categories && post.categories.length) { %>
+	<%- partial('components/category') %>
+<% } %>
+<% if(post.tags && post.tags.length) { %>
+	<%- partial('components/tag') %>
+<% } %>		
