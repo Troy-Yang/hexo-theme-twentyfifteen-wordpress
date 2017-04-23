@@ -600,7 +600,7 @@ a:focus {
 }
 
 .entry-content, .entry-summary {
-    padding: 0 10% 10%;
+    padding: 0 10%;
 }
 .entry-content, .article-more-link{
     margin-top: 2em;
@@ -689,7 +689,6 @@ a:focus {
 }
 
 .archives-wrap {
-    margin: 50px 0;
 	padding: 5% 10%;
 }
 .archive-year-wrap {
@@ -816,7 +815,6 @@ a:focus {
 .site-footer {
     border-top: 0;
     box-shadow: 0 0 1px rgba(0, 0, 0, 0.15);
-    margin: 0 7.6923%;
     padding: 3.84615% 7.6923%;
 }
 }
