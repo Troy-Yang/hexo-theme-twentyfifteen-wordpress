@@ -554,6 +554,14 @@ a:focus {
     font-size: 0.85em;
 }
 
+.widget .archive-list-count:before{
+    content:"(";
+}
+
+.widget .archive-list-count:after{
+    content:")";
+}
+
 .misc {
     position: fixed;
     right: 0;
@@ -617,7 +625,7 @@ a:focus {
 }
 
 .entry-content, .entry-summary {
-    padding: 0 10%;
+    padding: 0 10% 10%;
 }
 .entry-content, .article-more-link{
     margin-top: 2em;
@@ -961,6 +969,7 @@ body:before {
 .hentry {
     box-shadow: 0 0 1px rgba(0, 0, 0, 0.15);
     margin: 0 8.3333%;
+    margin-top: 8.3333%;
 }
 
 .entry-content a{
