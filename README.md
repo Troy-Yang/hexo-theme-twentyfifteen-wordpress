@@ -4,6 +4,7 @@
 This is a responsive hexo theme inspired by a very popular wordpress theme called [twentyfifeen](https://wordpress.org/themes/twentyfifteen/). Compared with the original theme, I did many enhancements to make it more lightweight and added more custom features like content UI changes, more supports for chinese.
 
 ### Online [Demo](http://troyyang.com/)
+![image](http://ommnrsgt0.bkt.clouddn.com/hexo-2015-desktop-english.PNG)
 ### Features
 * **Responsive Design** - From smartphone, tablet, laptop, to desktop computer.
 * **Lightweight** - Minimized the resources and layout.
