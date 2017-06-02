@@ -12,6 +12,7 @@ This is a responsive hexo theme inspired by a very popular wordpress theme calle
 * **Highlight** - code highlight.
 * **Comments** - Disqus, duoshuo, changyuan and so on.
 * **Analytics** - Google, Baidu Analytics.
+* **Visit count** - Leancloud visit counter.
 * **Custom Single Page** - Easy to add pages like "About".
 
 ### Configuration (_config.yml)
@@ -61,6 +62,11 @@ changyan:
 duoshuo:
   enable: true
   shortname: 
+# Visitors
+leancloud_visitors:
+  enable: true
+  app_id: 
+  app_key: 
 ```
 
 ### TODO
