@@ -669,11 +669,11 @@ a:focus {
     border-bottom: 1px solid #333;
 }
 
-.posted-on, .byline, .cat-links, .tags-links, .comments-link, .entry-format, .full-size-link {
+.posted-on, .byline, .eye, .cat-links, .tags-links, .comments-link, .entry-format, .full-size-link {
     margin-right: 1em;
 }
 
-.posted-on:before, .byline:before, .cat-links:before, .tags-links:before, .comments-link:before, .entry-format:before, .edit-link:before, .full-size-link:before {
+.posted-on:before, .byline:before, .eye:before, .cat-links:before, .tags-links:before, .comments-link:before, .entry-format:before, .edit-link:before, .full-size-link:before {
     margin-right: 2px;
     position: relative;
 }
@@ -689,6 +689,9 @@ a:focus {
 }
 .tags-links:before {
     content: "\f02c";
+}
+.eye:before{
+    content: "\f06e";
 }
 
 /**

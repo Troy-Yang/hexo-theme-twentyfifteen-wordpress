@@ -42,3 +42,8 @@ changyan:
 duoshuo:
   enable: true
   shortname: troyyang
+# Visitors
+leancloud_visitors:
+  enable: true
+  app_id: wzqncxgqp9MCPiPERe3gnX2Q-gzGzoHsz
+  app_key: CCtBiqyPtJWupuozt1393AXm
