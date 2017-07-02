@@ -30,7 +30,7 @@ baidu_analytics: 542b4962c3c4035fce9071b7c665f0d2
 google_analytics: UA-97838175-1
 # Disqus
 disqus:
-  enable: false
+  enable: true
   shortname: troyyang-com
   count: true
 # changyan
@@ -40,7 +40,7 @@ changyan:
   appkey:
 # duoshuo
 duoshuo:
-  enable: true
+  enable: false
   shortname: troyyang
 # Visitors
 leancloud_visitors:
