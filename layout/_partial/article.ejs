@@ -5,7 +5,7 @@
 		<%- partial('components/gallery') %>
 		<% if (post.link || post.title){ %>
 			<header class="entry-header">
-				<h2 class="entry-title"><a href="<%- url_for(post.path) %>" rel="bookmark"><%- post.title %></a></h2>	
+				<h2 class="entry-title"><a class="post-title-link" href="<%- url_for(post.path) %>" rel="bookmark"><%- post.title %></a></h2>	
 			</header>
 		<% } %>
 		<!-- .entry-header -->

@@ -19,8 +19,8 @@
                         }
                         for (var i = 0; i < results.length; i++) {
                             var object = results[i];
-                            var content = $(document.getElementById(url)).text() + ': ' + object.get('time');
-                            $(document.getElementById(url)).text(content);
+                            //var content = $(document.getElementById(url)).text() + ': ' + object.get('time');
+                            $(document.getElementById(url)).text(object.get('time'));
                         }
                     },
                     error: function (object, error) {
@@ -43,7 +43,7 @@
                         counter.increment("time");
                         counter.save(null, {
                             success: function (counter) {
-                                var content = $(document.getElementById(url)).text() + ': ' + counter.get('time');
+                                //var content = $(document.getElementById(url)).text() + ': ' + counter.get('time');
                                 // remove ': '
                                 $(document.getElementById(url)).text(counter.get('time'));
                             },
