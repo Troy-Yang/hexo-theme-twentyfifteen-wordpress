@@ -21,6 +21,11 @@
 				<%- post.content %>
 			<% } %>
 		</div><!-- .entry-content -->
+		<% if (!index && theme.artical_license_statement){ %>
+			<div class="entry-content">
+				<%= theme.artical_license_statement %>
+			</div>
+		<% } %>
 		<% if (!index && post.comments){ %>
 			<div class="entry-comments">
 				<%- partial('article-comments', {post: post}) %>
