@@ -2,8 +2,10 @@
 # Site Settings
 # ===========================================
 # Header
-site_title: Troy's Blog
-site_description: Focus on Web Development and live in ChengDu. Happy Coding, Happy Life!
+# site_avatar: https://images.troyyang.com/avatar.png
+site_avatar: /images/avatar.png
+site_title: Troy's 博客
+site_description: 专注于Web开发，现在居住于成都. Happy Coding, Happy Life!
 menu:
   Home: /
   Archives: /archives

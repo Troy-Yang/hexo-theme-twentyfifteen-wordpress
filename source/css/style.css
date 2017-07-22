@@ -418,6 +418,27 @@ a:focus {
 }
 
 /**
+* Avatar
+*/
+.avatar-circle {
+    line-height: 0;		/* remove line-height */ 
+	display: inline-block;	/* circle wraps image */
+	margin: 5px;
+	border-radius: 50%;	/* relative value */
+	/*box-shadow: 0px 0px 5px rgba(0,0,0,0.4);*/
+    height: 48px;
+    width: 48px;
+}
+
+.avatar-circle img {
+	border-radius: 50%;	/* relative value for
+				   adjustable image size */
+}
+.avatar-circle:hover {
+    border: 2px solid rgba(255,255,255,0.8);
+}
+
+/**
 * Sidebar
 */
 .site-header {
@@ -914,7 +935,7 @@ body:before {
 .site-header {
     background-color: transparent;
     border-bottom: 0;
-    margin: 20% 0;
+    margin: 10% 0;
     padding: 0 20%;
 }
 
@@ -944,14 +965,14 @@ body:before {
 .main-navigation {
     font-size: 12px;
     font-size: 1.2rem;
-    margin: 0 20% 20%;
+    margin: 0 20% 10%;
 }
 
 .widget {
 	display:block;
     font-size: 12px;
     font-size: 1.2rem;
-    margin: 0 0 20%;
+    margin: 0 0 10%;
     padding: 0 20%;
 }
 
