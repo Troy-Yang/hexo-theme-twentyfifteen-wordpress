@@ -5,7 +5,7 @@
 site_title: Troy's 博客
 site_description: 专注于Web开发，现在居住于成都. Happy Coding, Happy Life!
 # ---Optional ---
-site_avatar: /images/avatar.png
+site_avatar: /images/avatar-small.png
 artical_license_statement: 本文由http://troyyang.com原创编写，转载请尽量保留版权网址，感谢您的理解与分享!
 # ---End Optional ---
 menu:
