@@ -1,7 +1,4 @@
 $(function(){
-	// using image laze load.
-	$('img[data-original]').lazyload();
-
 	secondary = $( '#secondary' );
 	button = $( '.site-branding' ).find( '.secondary-toggle' );
 
