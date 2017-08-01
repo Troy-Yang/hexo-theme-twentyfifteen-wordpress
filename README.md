@@ -14,6 +14,7 @@ This is a responsive hexo theme inspired by a very popular wordpress theme calle
 * **Analytics** - Google, Baidu Analytics.
 * **Visit count** - Leancloud visit counter.
 * **Custom Single Page** - Easy to add pages like "About".
+* **Lazy-load image** - a [hexo-lazyload-image](https://www.npmjs.com/package/hexo-lazyload-image) plugin created by me to support it.
 
 ### Configuration (_config.yml)
 
@@ -72,7 +73,7 @@ leancloud_visitors:
 ### TODO
 * Social links.
 * Searching.
-* photo gallery.
-* Reading book Page - I would like to add a custom page to include the books I am reading, and did a comment for the books I read. Just want to leave a note for each book and encourage to consist reading.
 
 ### Github is used for programmer social, right? So, any advices would be welcome.
+
+**Enjoy it!**
