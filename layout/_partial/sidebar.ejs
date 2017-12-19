@@ -2,7 +2,7 @@
 	<div class="site-branding">
 		<h1 class="site-title">
 			<% if(theme.site_avatar) { %>
-				<a href="<%- theme.site_avatar %>" class="avatar-circle"><img src="<%- theme.site_avatar %>" /></a>
+				<a href="<%- url_for(theme.site_avatar) %>" class="avatar-circle"><img src="<%- url_for(theme.site_avatar) %>" /></a>
 			<% }%>
 			<a href="<%- url_for(config.root) %>" rel="home"><%= theme.site_title %></a></h1>
 		<p class="site-description"><%= theme.site_description %></p>
