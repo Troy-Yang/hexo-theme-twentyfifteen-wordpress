@@ -600,6 +600,80 @@ a:focus {
     font-size: 2em;
 }
 
+.social-navigation {
+    list-style: none;
+    margin: 0 0 -1.6em;
+}
+
+.social-navigation ul:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.social-navigation li {
+    width: 20%;
+    float: left;
+}
+
+/* search panel */
+.search-field{
+    background-image: -webkit-linear-gradient(rgba(255,255,255,0),rgba(255,255,255,0));
+    border: 1px solid #eaeaea;
+    border: 1px solid rgba(51,51,51,.1);
+    color: #707070;
+    background-color: #f7f7f7;
+    border-radius: 2px;
+    font-size: 16px;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    width: 100%;
+    padding: 5px;
+    position: relative;
+}
+
+.search-loading{
+    display: none;
+    position: absolute;
+    margin-top: 5px;
+}
+
+.search-result{
+    display: none;
+    position: absolute;
+    width:60%; /* its width according to input width */
+}
+
+.search-result ul{
+    border:1px solid #ccc;
+    height:auto;
+    padding:0px;
+    margin:0px;
+   }
+   /* if you want style so that's why i use "li a" also */
+.search-result ul li, 
+.search-result ul li a{
+    background-color:#fff;
+    color:#000;
+    font-size:12px; /* according to your requirement */
+    font-family:arial;
+    font-weight:normal;
+    padding:0 10px;
+    margin:0px;
+    line-height:30px; /* according to your requirement */
+    display:block;
+}
+.search-result ul li:hover,
+.search-result ul li a:hover{
+    background-color:#ccc;
+    color:#000;
+    text-decoration:normal;
+}
+.search-result ul li:hover .suggested_input{
+    background-color:#FAFFBD;
+    border:1px solid #3C8DBC;
+}
+
 /* content */
 
 .hentry {
@@ -974,6 +1048,12 @@ body:before {
     font-size: 1.2rem;
     margin: 0 0 10%;
     padding: 0 20%;
+}
+
+.social-navigation a {
+    height: 2.5263em;
+    width: 2.5263em;
+    font-size: 2em;
 }
 
 /*content*/

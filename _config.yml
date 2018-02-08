@@ -57,7 +57,7 @@ leancloud_visitors:
   app_key: CCtBiqyPtJWupuozt1393AXm
 
 # Search 
-# Note: please install hexo-generator-search plugin and config the root _config.yml  as below value search.json(https://www.npmjs.com/package/hexo-generator-search):
+# Note: please install hexo-generator-search plugin and config the root _config.yml (not theme's _config.yml) as below value search.json(https://www.npmjs.com/package/hexo-generator-search):
 #search:
 #  path: search.json
 #  field: post
