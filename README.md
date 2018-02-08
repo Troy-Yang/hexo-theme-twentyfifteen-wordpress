@@ -4,7 +4,7 @@
 This is a responsive hexo theme inspired by a very popular wordpress theme called [twentyfifeen](https://wordpress.org/themes/twentyfifteen/). Compared with the original theme, I did many enhancements to make it more lightweight and added more custom features like content UI changes, more supports for chinese.
 
 ### Online [Demo](http://troyyang.com/)
-![image](http://images.troyyang.com/2017-05-01-hexo-2015-wordpress.jpg)
+![image](http://ommnrsgt0.bkt.clouddn.com/2017-05-01-hexo-2015-wordpress.jpg)
 ### Features
 * **Responsive Design** - From smartphone, tablet, laptop, to desktop computer.
 * **Lightweight** - Minimized the resources and layout.
@@ -32,8 +32,11 @@ menu:
 # display widgets
 widgets:
 - archives
+- search
+#- social_links
 - recent_posts
 - tagcloud
+
 # widget behavior
 archive_type: 'monthly'
 show_count: true
@@ -70,9 +73,8 @@ leancloud_visitors:
   app_key: 
 ```
 
-### TODO
-* Social links.
-* Searching.
+TODO:
+put search result into a single page.
 
 ### Github is used for programmer social, right? So, any advices would be welcome.
 
