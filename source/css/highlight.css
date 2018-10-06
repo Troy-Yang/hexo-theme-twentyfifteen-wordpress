@@ -56,7 +56,7 @@ article .highlight .gutter pre {
   padding-right: 20px;
 }
 article .highlight .line {
-  height: 22.400000000000002px;
+  /* height: 22.400000000000002px; */
 }
 article .highlight .line.marked {
   background: #515151;
