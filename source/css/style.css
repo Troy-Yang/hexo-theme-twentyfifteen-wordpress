@@ -732,6 +732,9 @@ a:focus {
     color: #f72d84;
 }
 
+.entry-content a{
+	text-decoration: underline;
+}
 
 .entry-comments{
 	border-top: 1px solid #eaeaea;
@@ -1076,9 +1079,6 @@ body:before {
     margin-top: 8.3333%;
 }
 
-.entry-content a{
-	text-decoration: underline;
-}
 .entry-comments{
     margin: 0 10%;
     padding: 10% 0;

@@ -15,6 +15,7 @@ This is a responsive hexo theme inspired by a very popular wordpress theme calle
 * **Visit count** - Leancloud visit counter.
 * **Custom Single Page** - Easy to add pages like "About".
 * **Lazy-load image** - a [hexo-lazyload-image](https://www.npmjs.com/package/hexo-lazyload-image) plugin created by me to support it.
+* **Local search** local search for title or keywords (please make sure hexo-search plugin installed)
 
 ### Configuration (_config.yml)
 
