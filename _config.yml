@@ -16,7 +16,7 @@ menu:
 # display widgets
 widgets:
 - archives
-#- search
+- search
 #- social_links
 - recent_posts
 - tagcloud
@@ -36,6 +36,7 @@ favicon:
 baidu_analytics: 542b4962c3c4035fce9071b7c665f0d2
 # Google Analytics
 google_analytics: UA-97838175-1
+addthis_analytics: ra-5d3d630390ef40ae
 # Disqus
 disqus:
   enable: true
@@ -55,9 +56,15 @@ leancloud_visitors:
   enable: true
   app_id: wzqncxgqp9MCPiPERe3gnX2Q-gzGzoHsz
   app_key: CCtBiqyPtJWupuozt1393AXm
+donation:
+  enable: true
 
 # Search 
 # Note: please install hexo-generator-search plugin and config the root _config.yml (not theme's _config.yml) as below value search.json(https://www.npmjs.com/package/hexo-generator-search):
 #search:
 #  path: search.json
 #  field: post
+infinite:
+  enable: true
+  title1: Happy Coding, Happy Life!
+  title2: 蜀ICP备15004900号-1
