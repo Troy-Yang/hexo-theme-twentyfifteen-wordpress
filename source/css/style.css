@@ -379,7 +379,6 @@ del {
 	font-family: "Noto Sans", sans-serif;
 }
 
-
 /**
  * 5.0 Forms
  */
@@ -586,7 +585,7 @@ a:focus {
 .misc {
     position: fixed;
     right: 0;
-    bottom: 40px;
+    bottom: 50px;
     z-index: 999;
     width: 36px;
     /*background-color: #4aa6fc;
@@ -752,6 +751,7 @@ a:focus {
     font-size: 1.2rem;
     line-height: 1.5;
     padding: 3.8461% 10%;
+    position: relative;
 }
 .entry-footer a {
     border-bottom: 1px solid transparent;
@@ -790,6 +790,12 @@ a:focus {
 }
 .eye:before{
     content: "\f06e";
+}
+
+.license-statement {
+    margin-top: 5rem;
+    font-size: 1.5rem;
+    color: rgba(51,51,51,.7);
 }
 
 /**
@@ -996,6 +1002,8 @@ body:before {
 }
 	
 .sidebar {
+    overflow-y: auto;
+    height: 100%;
     float: left;
     margin-right: -100%;
     max-width: 413px;
