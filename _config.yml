@@ -58,6 +58,8 @@ leancloud_visitors:
   app_key: CCtBiqyPtJWupuozt1393AXm
 donation:
   enable: true
+  alipay: /images/alipay-qr.png
+  wechat: /images/wechat-qr.png
 
 # Search 
 # Note: please install hexo-generator-search plugin and config the root _config.yml (not theme's _config.yml) as below value search.json(https://www.npmjs.com/package/hexo-generator-search):

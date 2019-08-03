@@ -1,5 +1,87 @@
 <% if (theme.donation && theme.donation.enable){ %>
-  <a class="donate">
-    <%= __('donation') %>
-  </a>
+<div class="donate-container">
+  <div class="donate-button">
+    <a class="donate">
+      <%= __('donation') %>
+    </a>
+  </div>
+  <div class="donate-items hidden">
+    <% if(theme.donation.alipay){ %>
+    <div class="item">
+        <img class="header" src="<%- config.root %>images/alipay.png" />
+        <img class="content" src="<%- url_for(theme.donation.alipay) %>" />
+    </div>
+    <% } %>
+    <% if(theme.donation.wechat){ %>
+    <div class="item">
+        <img class="header" src="<%- config.root %>images/wechat.png" />
+        <img class="content" src="<%- url_for(theme.donation.wechat) %>" />
+    </div>
+    <% } %>
+  </div>
+</div>
+<style type="text/css">
+  .donate-container {
+    padding: 2rem 0rem;
+  }
+
+  .donate-container .donate-button {
+    text-align: center;
+  }
+
+  .donate-container a.donate {
+    font-size: 1.2rem;
+    border-radius: 1rem;
+    padding: 0 0.5rem;
+    background-color: #44c767;
+    border: 1px solid #18ab29;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #2f6627;
+  }
+
+  .donate-container a.donate:hover {
+    background-color: #5cbf2a;
+    color: #ffffff;
+  }
+
+  @media screen and (min-width: 59.6875rem) {
+    .donate-container a.donate {
+      font-size: 2rem;
+      border-radius: 2rem;
+      padding: .5rem 2rem;
+    }
+  }
+
+  .donate-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .donate-items.hidden {
+    display: none;
+  }
+
+  .donate-items .item {
+    display: inline-block;
+    text-align: center;
+    width: 200px;
+    margin: 20px;
+  }
+
+  .donate-items .item img.header {
+    width: 160px;
+    height: 40px;
+  }
+</style>
+<script>
+  window.addEventListener('DOMContentLoaded', function () {
+    $('.donate').click(function (e) {
+      $('.donate-items').toggleClass('hidden');
+    });
+  });
+</script>
 <% } %>

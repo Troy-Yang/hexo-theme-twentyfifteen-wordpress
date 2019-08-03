@@ -19,13 +19,15 @@
 				<% } %>
 			<% } else { %>
 				<%- post.content %>
+
+				<% if (!index && theme.artical_license_statement){ %>
+					<div class="license-statement"><%= theme.artical_license_statement %></div>
+				<% } %>
+				<% if (!index){ %>
+					<%- partial('components/donation') %>
+				<% } %>
 			<% } %>
 		</div><!-- .entry-content -->
-		<% if (!index && theme.artical_license_statement){ %>
-			<div class="entry-content">
-				<span class="license-statement"><%= theme.artical_license_statement %></span>
-			</div>
-		<% } %>
 		<% if (!index && post.comments){ %>
 			<div class="entry-comments">
 				<%- partial('article-comments', {post: post}) %>
