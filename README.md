@@ -72,10 +72,21 @@ leancloud_visitors:
   enable: true
   app_id: 
   app_key: 
-```
+donation:
+  enable: true
+  alipay: /images/alipay-qr.png
+  wechat: /images/wechat-qr.png
 
-TODO:
-put search result into a single page.
+# Search 
+# Note: please install hexo-generator-search plugin and config the root _config.yml (not theme's _config.yml) as below value search.json(https://www.npmjs.com/package/hexo-generator-search):
+#search:
+#  path: search.json
+#  field: post
+infinite:
+  enable: true
+  title1: 
+  title2: 
+```
 
 ### Github is used for programmer social, right? So, any advices would be welcome.
 
