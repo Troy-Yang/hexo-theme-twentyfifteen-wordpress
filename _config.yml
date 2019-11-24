@@ -37,6 +37,9 @@ baidu_analytics: 542b4962c3c4035fce9071b7c665f0d2
 # Google Analytics
 google_analytics: UA-97838175-1
 addthis_analytics: ra-5d3d630390ef40ae
+# Netflify CMS to manage your post file online
+# you need to create your 'admin' folder in source/_post and config in Netlify, refer to https://www.netlifycms.org/docs/add-to-your-site/
+netlifycmsScript: false
 # Disqus
 disqus:
   enable: true
