@@ -1,6 +1,6 @@
 <% if (theme.leancloud_visitors.enable){ %>
-    <span class="eye font-asesome-icon" >
-         <span id="<%- url_for(post.path) %>" class="leancloud_visitors" data-flag-title="<%- post.title %>">
+    <span class="eye font-asesome-icon leancloud_visitors" id="<%- url_for(post.path) %>" data-flag-title="<%- post.title %>">
+         <span class="leancloud-visitors-count">
         <% __('post.visitors') %>
         </span>
     </span>
