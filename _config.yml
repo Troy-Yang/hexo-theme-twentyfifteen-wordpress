@@ -56,6 +56,7 @@ leancloud_visitors:
   enable: true
   app_id: wzqncxgqp9MCPiPERe3gnX2Q-gzGzoHsz
   app_key: CCtBiqyPtJWupuozt1393AXm
+  server_url: https://wzqncxgq.lc-cn-n1-shared.com
 donation:
   enable: true
   alipay: /images/alipay-qr.png
