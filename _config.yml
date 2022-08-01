@@ -36,7 +36,7 @@ favicon:
 baidu_analytics: 542b4962c3c4035fce9071b7c665f0d2
 # Google Analytics
 google_analytics: UA-97838175-1
-addthis_analytics: ra-5d3d630390ef40ae
+# addthis_analytics: ra-5d3d630390ef40ae
 # Disqus
 disqus:
   enable: true
